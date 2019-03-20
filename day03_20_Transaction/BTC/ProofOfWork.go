@@ -52,6 +52,7 @@ func (pow *ProofOfWork) Run() ([]byte, int64) {
 		//每次挖矿nonce值增加
 		nonce++
 	}
+	fmt.Println()
 	return hash[:], int64(nonce)
 }
 
@@ -60,10 +61,11 @@ func (pow *ProofOfWork) prepareData(nonce int) []byte {
 		[][]byte{
 			//pow中随机变量：1、父区块的hash值，2、区块数据，3、区块当前时间戳
 			pow.Block.PrevBlockHash,
-			pow.Block.Data,
+			pow.Block.HashTransactions(),
 			IntToHex(pow.Block.TimeStamp),
 			IntToHex(int64(TargetBit)),
 			IntToHex(int64(nonce)),
+			IntToHex(int64(pow.Block.Height)),
 		},
 		[]byte{},
 	)

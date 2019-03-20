@@ -2,6 +2,7 @@ package BTC
 
 import (
 	"bytes"
+	"crypto/sha256"
 	"encoding/gob"
 	"log"
 	"time"
@@ -10,14 +11,16 @@ import (
 type Block struct {
 	Height        int64
 	PrevBlockHash []byte
-	Data          []byte
-	TimeStamp     int64
-	Hash          []byte
-	Nonce         int64
+	//Data          []byte
+	Txs       []*Transaction
+	TimeStamp int64
+	Hash      []byte
+	Nonce     int64
 }
 
-func NewBlock(data string, provBlockHash []byte, height int64) *Block {
-	block := &Block{height, provBlockHash, []byte(data), time.Now().Unix(), nil, 0}
+func NewBlock(txs []*Transaction, provBlockHash []byte, height int64) *Block {
+	//创建区块
+	block := &Block{height, provBlockHash, txs, time.Now().Unix(), nil, 0}
 	//block.SetHash()
 	pow := NewProofOfWork(block)
 	hash, nonce := pow.Run()
@@ -41,8 +44,8 @@ func NewBlock(data string, provBlockHash []byte, height int64) *Block {
 //	block.Hash = hash[:]
 //}
 
-func CreateGenesisBlock(data string) *Block {
-	return NewBlock(data, make([]byte, 32, 32), 0)
+func CreateGenesisBlock(txs []*Transaction) *Block {
+	return NewBlock(txs, make([]byte, 32, 32), 0)
 }
 
 //将区块序列化，得到一个字节数组--区块的行为，设计为方法
@@ -66,4 +69,16 @@ func DeserializeBlock(blockBytes []byte) *Block {
 		log.Panic(err)
 	}
 	return &block
+}
+
+//将Txs转为[]byte
+func (block *Block) HashTransactions() []byte {
+	var txHashes [][]byte
+	var txHash [32]byte
+	for _, tx := range block.Txs {
+		txHashes = append(txHashes, tx.TxID)
+	}
+
+	txHash = sha256.Sum256(bytes.Join(txHashes, []byte{}))
+	return txHash[:]
 }
