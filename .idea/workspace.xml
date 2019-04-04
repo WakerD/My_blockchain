@@ -1,14 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/day03_26_signature/BTC/Transaction.go" line="97" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e154f29-5cce-448f-a953-b86b7d2c77f2" name="Default Changelist" comment="">
+    <list default="true" id="3e154f29-5cce-448f-a953-b86b7d2c77f2" name="Default Changelist" comment="3.22 add Address function">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/BTC/Block.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/BTC/BlockChain.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/BTC/ProofOfWork.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/BTC/utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_20_Transaction/bc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_20_Transaction/blockchain.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/Block.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/BlockChain.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/BlockChainIterator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/CLI.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/CLI_addresslists.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/CLI_createBlockChain.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/CLI_createwallet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/CLI_getBalance.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/CLI_printChains.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/CLI_send.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/Constant.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/ProofOfWork.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/Transaction.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/Transaction_TxInput.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/Transaction_TxOutput.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/Transaction_UTXO.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/Wallet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/base58.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/BTC/wallets.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/bc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/blockchain.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_22_Address/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/Block.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/BlockChain.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/BlockChainIterator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/CLI.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/CLI_addresslists.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/CLI_createBlockChain.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/CLI_createwallet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/CLI_getBalance.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/CLI_printChains.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/CLI_send.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/Constant.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/ProofOfWork.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/Transaction.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/Transaction_TxInput.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/Transaction_TxOutput.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/Transaction_UTXO.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/Wallet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/base58.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/BTC/wallets.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/bc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/blockchain.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03_26_signature/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03_20_Transaction/BTC/BlockChain.go" beforeDir="false" afterPath="$PROJECT_DIR$/day03_20_Transaction/BTC/BlockChain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03_20_Transaction/BTC/Transaction_UTXO.go" beforeDir="false" afterPath="$PROJECT_DIR$/day03_20_Transaction/BTC/Transaction_UTXO.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,53 +76,108 @@
     <session id="-667120131">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="8" />
-          <entry key="mod" value="1" />
+          <entry key="bc" value="6" />
+          <entry key="db" value="14" />
+          <entry key="go" value="178" />
+          <entry key="mod" value="12" />
+          <entry key="sum" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="DTD" value="1" />
-          <entry key="Go" value="8" />
+          <entry key="DTD" value="12" />
+          <entry key="Go" value="178" />
+          <entry key="PLAIN_TEXT" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="2775" />
+          <entry key="go" value="20220" />
+          <entry key="mod" value="64" />
+          <entry key="txt" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="2775" />
+          <entry key="DTD" value="64" />
+          <entry key="Go" value="20220" />
+          <entry key="PLAIN_TEXT" value="59" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.go.postfix.template.usages.trigger">
+        <counts>
+          <entry key=".p" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.go">
+        <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/BlockChain.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="45" column="49" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="49" />
+            <state relative-caret-position="105">
+              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/Wallet.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding>
-                <element signature="e#14#43#0" expanded="true" />
+                <element signature="e#13#188#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BTC/ProofOfWork.go">
+        <entry file="file://$PROJECT_DIR$/go.mod">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="71" column="1" lean-forward="true" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/Block.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/Transaction.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="604">
+              <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/Transaction_TxOutput.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="14" />
               <folding>
                 <element signature="e#13#44#0" expanded="true" />
               </folding>
@@ -75,34 +186,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BTC/Block.go">
+        <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/Transaction_TxInput.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-73">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-              <folding>
-                <element signature="e#13#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BTC/utils.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-              <folding>
-                <element signature="e#13#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BTC/BlockChain.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="165">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -112,14 +199,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="Go Application" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>createGenesisBlockchain</find>
+    </findStrings>
+  </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -128,11 +220,44 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/BTC/main.go" />
-        <option value="$PROJECT_DIR$/BTC/BlockChain.go" />
         <option value="$PROJECT_DIR$/BTC/utils.go" />
-        <option value="$PROJECT_DIR$/BTC/Block.go" />
         <option value="$PROJECT_DIR$/BTC/ProofOfWork.go" />
+        <option value="$PROJECT_DIR$/BTC/Constant.go" />
+        <option value="$PROJECT_DIR$/BTC/BlockChainIterator.go" />
         <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/BTC/CLI.go" />
+        <option value="$PROJECT_DIR$/BTC/BlockChain.go" />
+        <option value="$PROJECT_DIR$/day03_05_Transaction/BTC/Transaction_TxInput.go" />
+        <option value="$PROJECT_DIR$/day03_05_Transaction/BTC/Transaction_TxOutput.go" />
+        <option value="$PROJECT_DIR$/day03_05_Transaction/BTC/Transaction_UTXO.go" />
+        <option value="$PROJECT_DIR$/day03_05_Transaction/BTC/ProofOfWork.go" />
+        <option value="$PROJECT_DIR$/day03_05_Transaction/BTC/utils.go" />
+        <option value="$PROJECT_DIR$/day03_05_Transaction/BTC/Block.go" />
+        <option value="$PROJECT_DIR$/day03_05_Transaction/BTC/CLI_createBlockChain.go" />
+        <option value="$PROJECT_DIR$/day03_05_Transaction/BTC/CLI_send.go" />
+        <option value="$PROJECT_DIR$/day03_05_Transaction/BTC/CLI_printChains.go" />
+        <option value="$PROJECT_DIR$/day03_05_Transaction/BTC/CLI_getBalance.go" />
+        <option value="$PROJECT_DIR$/day03_05_Transaction/BTC/Transaction.go" />
+        <option value="$PROJECT_DIR$/day03_05_Transaction/BTC/BlockChain.go" />
+        <option value="$PROJECT_DIR$/day03_05_Transaction/main.go" />
+        <option value="$PROJECT_DIR$/day03_05_Transaction/BTC/CLI.go" />
+        <option value="$PROJECT_DIR$/BTC/Block.go" />
+        <option value="$PROJECT_DIR$/day03_20_Transaction/BTC/Transaction_UTXO.go" />
+        <option value="$PROJECT_DIR$/day03_20_Transaction/BTC/BlockChain.go" />
+        <option value="$PROJECT_DIR$/day03_20_Transaction/BTC/CLI.go" />
+        <option value="$PROJECT_DIR$/day03_22_Address/main.go" />
+        <option value="$PROJECT_DIR$/day03_22_Address/BTC/base58.go" />
+        <option value="$PROJECT_DIR$/day03_22_Address/BTC/wallets.go" />
+        <option value="$PROJECT_DIR$/day03_22_Address/BTC/CLI_createwallet.go" />
+        <option value="$PROJECT_DIR$/day03_22_Address/BTC/CLI_addresslists.go" />
+        <option value="$PROJECT_DIR$/day03_22_Address/BTC/CLI.go" />
+        <option value="$PROJECT_DIR$/day03_22_Address/BTC/Wallet.go" />
+        <option value="$PROJECT_DIR$/day03_26_signature/BTC/Transaction_TxInput.go" />
+        <option value="$PROJECT_DIR$/day03_26_signature/BTC/Transaction_TxOutput.go" />
+        <option value="$PROJECT_DIR$/day03_26_signature/BTC/BlockChain.go" />
+        <option value="$PROJECT_DIR$/day03_26_signature/BTC/Transaction.go" />
+        <option value="$PROJECT_DIR$/day03_26_signature/BTC/Wallet.go" />
+        <option value="$PROJECT_DIR$/go.mod" />
       </list>
     </option>
   </component>
@@ -143,10 +268,24 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="606" />
+    <option name="x" value="708" />
     <option name="y" value="23" />
-    <option name="width" value="834" />
-    <option name="height" value="813" />
+    <option name="width" value="732" />
+    <option name="height" value="811" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CSS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -168,37 +307,17 @@
             <path>
               <item name="golangBTC" type="b2602c69:ProjectViewProjectNode" />
               <item name="golangBTC" type="462c0819:PsiDirectoryNode" />
+              <item name="day03_26_signature" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="golangBTC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golangBTC" type="462c0819:PsiDirectoryNode" />
+              <item name="day03_26_signature" type="462c0819:PsiDirectoryNode" />
               <item name="BTC" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="golangBTC" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="golangBTC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
-            </path>
-            <path>
-              <item name="golangBTC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="golangBTC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="math" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="golangBTC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="math" type="462c0819:PsiDirectoryNode" />
-              <item name="big" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -207,15 +326,26 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/day03_22_Address/BTC" />
+      <recent name="$PROJECT_DIR$/day03_05_Transaction" />
+      <recent name="$PROJECT_DIR$/day03_05_Transaction/BTC" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day03_05_Transaction" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/BTC" />
     </key>
@@ -232,28 +362,60 @@
       </list>
     </option>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="606" y="23" width="834" height="813" extended-state="0" />
+    <frame x="708" y="23" width="732" height="811" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.121212125" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.30659026" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49856323" visible="true" weight="0.3884058" />
+      <window_info id="Structure" order="1" sideWeight="0.50143677" side_tool="true" weight="0.124475524" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.45114943" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20402299" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32902297" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3275862" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49658936" weight="0.27586207" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50341064" side_tool="true" weight="0.40086207" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3275862" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49856323" visible="true" weight="0.22712934" />
+      <window_info id="Structure" order="1" sideWeight="0.50143677" side_tool="true" weight="0.124475524" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.45114943" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20402299" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32902297" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3275862" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49658936" visible="true" weight="0.27586207" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50341064" side_tool="true" weight="0.40086207" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3275862" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -261,79 +423,295 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="3.20 add command-line interface" />
+    <MESSAGE value="3.22 add Address function" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.22 add Address function" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <proxy>direct</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/go/src/builtin/builtin.go">
+    <entry file="file://$PROJECT_DIR$/day03_20_Transaction/BTC/CLI_send.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="133" column="5" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_20_Transaction/BTC/CLI_printChains.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/bc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/blockchain.db">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_20_Transaction/blockchain.db">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/go/src/encoding/gob/decoder.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="187" column="1" lean-forward="true" selection-start-line="187" selection-start-column="1" selection-end-line="187" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1896">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/wallets.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/Transaction_UTXO.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/Transaction_TxOutput.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/Transaction_TxInput.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/Transaction.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/CLI_getBalance.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/CLI_createBlockChain.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/CLI.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="179" column="5" lean-forward="true" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/BlockChainIterator.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/BlockChain.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/Block.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/base58.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/utils.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/boltdb/bolt@v1.3.1/bolt_openbsd.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/bc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/CLI.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2003" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/Transaction_UTXO.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/wallets.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="58" column="2" lean-forward="true" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/utils.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/CLI_getBalance.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/CLI_addresslists.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/CLI_send.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/CLI_printChains.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/CLI_createwallet.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/CLI_printChains.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/ProofOfWork.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/Constant.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.sum" />
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/CLI_send.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/CLI_createBlockChain.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/Wallet.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_22_Address/BTC/CLI_addresslists.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/CLI_createwallet.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/base58.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/crypto/elliptic/elliptic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="376" column="5" selection-start-line="376" selection-start-column="5" selection-end-line="376" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/crypto/ecdsa/ecdsa.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/BlockChainIterator.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding>
+            <element signature="e#13#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/Transaction_TxInput.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/Transaction_TxOutput.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="e#13#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/Transaction.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/Block.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/Wallet.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="e#13#188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03_26_signature/BTC/BlockChain.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/go.mod">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///usr/local/go/src/bytes/bytes.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="389" column="5" lean-forward="true" selection-start-line="389" selection-start-column="5" selection-end-line="389" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BTC/utils.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="e#13#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BTC/BlockChain.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BTC/Block.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <element signature="e#13#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/math/big/int.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="929" column="14" selection-start-line="929" selection-start-column="14" selection-end-line="929" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="45" column="49" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="49" />
-          <folding>
-            <element signature="e#14#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BTC/ProofOfWork.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="71" column="1" lean-forward="true" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
-          <folding>
-            <element signature="e#13#44#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

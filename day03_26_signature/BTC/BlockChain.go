@@ -1,6 +1,8 @@
 package BTC
 
 import (
+	"bytes"
+	"crypto/ecdsa"
 	"encoding/hex"
 	"fmt"
 	"github.com/boltdb/bolt"
@@ -119,7 +121,6 @@ func CreateBlockChainWithGenesisBlock(address string) {
 	if err != nil {
 		log.Panic(err)
 	}
-
 }
 
 func (bc *BlockChain) AddBlockToBlockChain(txs []*Transaction) {
@@ -149,7 +150,6 @@ func (bc *BlockChain) AddBlockToBlockChain(txs []*Transaction) {
 	if err != nil {
 		log.Panic(err)
 	}
-
 }
 
 //判断数据库是否存在
@@ -312,6 +312,15 @@ func (bc *BlockChain) MineNewBlock(from, to, amount []string) {
 		return nil
 	})
 
+	//在建立新区块链，对txs进行签名验证
+	_txs := []*Transaction{}
+	for _, tx := range txs {
+		if bc.VerifyTransaction(tx, _txs) != true {
+			log.Panic("签名验证失败。。。")
+		}
+		_txs = append(_txs, tx)
+	}
+
 	newBlock = NewBlock(txs, block.Hash, block.Height+1)
 
 	bc.DB.Update(func(tx *bolt.Tx) error {
@@ -354,6 +363,7 @@ func (bc *BlockChain) UnUTXOs(address string, txs []*Transaction) []*UTXO {
 
 func (bc *BlockChain) GetBalance(address string, txs []*Transaction) int64 {
 	unUTXOs := bc.UnUTXOs(address, txs)
+	fmt.Println(address, unUTXOs)
 	var amount int64
 	for _, utxo := range unUTXOs {
 		amount = amount + utxo.Output.Value
@@ -361,6 +371,7 @@ func (bc *BlockChain) GetBalance(address string, txs []*Transaction) int64 {
 	return amount
 }
 
+//转账时查获可用的UTXO
 func (bc *BlockChain) FindSpendableUTXOs(from string, amount int64, txs []*Transaction) (int64, map[string][]int) {
 	/*
 		1.获取所有的UTXO
@@ -370,7 +381,7 @@ func (bc *BlockChain) FindSpendableUTXOs(from string, amount int64, txs []*Trans
 	*/
 	var balance int64
 	utxos := bc.UnUTXOs(from, txs)
-
+	fmt.Println(from, utxos)
 	spendableUTXO := make(map[string][]int)
 	for _, utxo := range utxos {
 		balance += utxo.Output.Value
@@ -392,7 +403,12 @@ func caculate(tx *Transaction, address string, spentTxOutputs map[string][]int, 
 	if !tx.IsCoinbaseTransaction() {
 		for _, in := range tx.Vins {
 			//如果解锁
-			if in.UnLockWithAddress(address) {
+			//base58解码
+			fullPayloadHash := Base58Decode([]byte(address))
+			//按位取出公钥作为地址
+			pubKeyHash := fullPayloadHash[1 : len(fullPayloadHash)-addressChecksumLen]
+
+			if in.UnLockWithAddress(pubKeyHash) {
 				key := hex.EncodeToString(in.TxID)
 				spentTxOutputs[key] = append(spentTxOutputs[key], in.Vout)
 			}
@@ -406,6 +422,7 @@ outputs:
 			//如果对应的花费容器中长度不为0
 			if len(spentTxOutputs) != 0 {
 				var isSpentUTXO bool
+
 				for txID, indexArray := range spentTxOutputs {
 					for _, i := range indexArray {
 						if i == index && txID == hex.EncodeToString(tx.TxID) {
@@ -425,4 +442,54 @@ outputs:
 		}
 	}
 	return unUTXOs
+}
+
+//添加方法，签名一笔交易
+func (bc *BlockChain) SignTransaction(tx *Transaction, privKey ecdsa.PrivateKey, txs []*Transaction) {
+	if tx.IsCoinbaseTransaction() {
+		return
+	}
+	prevTxs := make(map[string]*Transaction)
+	for _, vin := range tx.Vins {
+		prevTx := bc.FindTransactionByTxID(vin.TxID, txs)
+		prevTxs[hex.EncodeToString(prevTx.TxID)] = prevTx
+	}
+	tx.Sign(privKey, prevTxs)
+}
+
+//根据交易ID查找对应的Transaction
+func (bc *BlockChain) FindTransactionByTxID(txID []byte, txs []*Transaction) *Transaction {
+	iterator := bc.Iterator()
+	//先遍历txs交易池中的交易
+	for _, tx := range txs {
+		if bytes.Compare(txID, tx.TxID) == 0 {
+			return tx
+		}
+	}
+	//再遍历区块链中的交易信息
+	for {
+		block := iterator.Next()
+		for _, tx := range block.Txs {
+			if bytes.Compare(txID, tx.TxID) == 0 {
+				return tx
+			}
+		}
+		//直到遍历到创世块的hashInt值为0，则停止。
+		var hashInt big.Int
+		hashInt.SetBytes(block.PrevBlockHash)
+		if big.NewInt(0).Cmp(&hashInt) == 0 {
+			break
+		}
+	}
+	return &Transaction{}
+}
+
+//验证数字签名
+func (bc *BlockChain) VerifyTransaction(tx *Transaction, txs []*Transaction) bool {
+	prevTXs := make(map[string]*Transaction)
+	for _, vin := range tx.Vins {
+		prevTX := bc.FindTransactionByTxID(vin.TxID, txs)
+		prevTXs[hex.EncodeToString(prevTX.TxID)] = prevTX
+	}
+	return tx.Verify(prevTXs)
 }
