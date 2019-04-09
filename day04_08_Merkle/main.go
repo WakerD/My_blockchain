@@ -1,6 +1,6 @@
 package main
 
-import "golangBTC/day03_26_signature/BTC"
+import "golangBTC/day04_08_Merkle/BTC"
 
 func main() {
 	////1、测试Block

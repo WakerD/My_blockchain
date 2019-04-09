@@ -294,9 +294,17 @@ func GetBlockchainObject() *BlockChain {
 //挖掘新的区块
 func (bc *BlockChain) MineNewBlock(from, to, amount []string) {
 	var txs []*Transaction
+
+	//奖励
+	tx := NewCoinBaseTransaction(from[0])
+	txs = append(txs, tx)
+
+	utxoSet := &UTXOSet{bc}
+
 	for i := 0; i < len(from); i++ {
 		amountInt, _ := strconv.ParseInt(amount[i], 10, 64)
-		tx := NewSimpleTransaction(from[i], to[i], amountInt, bc, txs)
+		tx := NewSimpleTransaction(from[i], to[i], amountInt, utxoSet, txs)
+
 		txs = append(txs, tx)
 	}
 
@@ -492,4 +500,68 @@ func (bc *BlockChain) VerifyTransaction(tx *Transaction, txs []*Transaction) boo
 		prevTXs[hex.EncodeToString(prevTX.TxID)] = prevTX
 	}
 	return tx.Verify(prevTXs)
+}
+
+/*
+查询未花费的output
+[string] *TxOutputs
+*/
+func (bc *BlockChain) FindUnSpentOutputMap() map[string]*TxOutputs {
+	iterator := bc.Iterator()
+
+	//存储已经花费：[txID],txInput
+	spentUTXOsMap := make(map[string][]*TXInput)
+	//存储未花费
+	unSpentOutputMaps := make(map[string]*TxOutputs)
+
+	for {
+		block := iterator.Next()
+
+		for i := len(block.Txs) - 1; i >= 0; i-- {
+			txOutputs := &TxOutputs{[]*UTXO{}}
+			tx := block.Txs[i]
+
+			if !tx.IsCoinbaseTransaction() {
+				for _, txInput := range tx.Vins {
+					key := hex.EncodeToString(txInput.TxID)
+					spentUTXOsMap[key] = append(spentUTXOsMap[key], txInput)
+				}
+			}
+
+			txID := hex.EncodeToString(tx.TxID)
+		work:
+			for index, out := range tx.Vouts {
+				txInputs := spentUTXOsMap[txID]
+				if len(txInputs) > 0 {
+					var isSpent bool
+					for _, input := range txInputs {
+						inputPubKeyHash := PubKeyHash(input.PublicKey)
+						if bytes.Compare(inputPubKeyHash, out.PubKeyHash) == 0 {
+							if input.Vout == index {
+								isSpent = true
+								continue work
+							}
+						}
+					}
+					if isSpent == false {
+						utxo := &UTXO{tx.TxID, index, out}
+						txOutputs.UTXOS = append(txOutputs.UTXOS, utxo)
+					}
+				} else {
+					utxo := &UTXO{tx.TxID, index, out}
+					txOutputs.UTXOS = append(txOutputs.UTXOS, utxo)
+				}
+			}
+			//设置
+			unSpentOutputMaps[txID] = txOutputs
+		}
+		//停止迭代
+		var hashInt big.Int
+		hashInt.SetBytes(block.PrevBlockHash)
+
+		if hashInt.Cmp(big.NewInt(0)) == 0 {
+			break
+		}
+	}
+	return unSpentOutputMaps
 }

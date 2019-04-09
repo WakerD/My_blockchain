@@ -3,5 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/day03_22_Address/blockchain.db" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/day03_26_signature/blockchain.db" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/day04_04_Update/blockchain.db" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/day04_08_Merkle/blockchain.db" charset="ISO-8859-1" />
   </component>
 </project>
